@@ -13,6 +13,8 @@ class ReactStreetview extends React.Component {
 
 	initialize (canvas) {
 		if (this.props.googleMaps && this.streetView == null) {
+			console.log("ENTRE AQUI");
+			
 			this.streetView = new this.props.googleMaps.StreetViewPanorama(
 				canvas,
 				this.props.streetViewPanoramaOptions
